@@ -1,4 +1,4 @@
-package com.crm.qa.base;
+package com.pmst.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -6,15 +6,13 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.crm.qa.util.TestUtil;
-import com.crm.qa.util.WebEventListener;
+import com.pmst.qa.util.TestUtil;
+import com.pmst.qa.util.WebEventListener;
 
 public class TestBase {
 	
@@ -26,7 +24,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/crm"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/pmst"
 					+ "/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
@@ -63,6 +61,10 @@ public class TestBase {
 		
 		driver.get(prop.getProperty("url"));
 		
+	}
+
+	public void reloadHomePage() {
+		driver.get(prop.getProperty("url"));
 	}
 	
 	

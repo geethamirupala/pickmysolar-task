@@ -1,4 +1,4 @@
-package com.crm.qa.util;
+package com.pmst.qa.util;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,7 +14,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.crm.qa.base.TestBase;
+import com.pmst.qa.base.TestBase;
 
 public class TestUtil extends TestBase {
 

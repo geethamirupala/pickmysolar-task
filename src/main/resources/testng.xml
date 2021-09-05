@@ -9,7 +9,7 @@
 
 	<test name="Amazon Test Cases">
 		<classes>
-			<class name="com.crm.qa.testcases.AmazonTestCases"></class>
+			<class name="com.pmst.qa.testcases.AmazonTestCases"></class>
 
 
 		</classes>
