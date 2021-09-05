@@ -11,7 +11,7 @@ import java.util.stream.StreamSupport;
 public class TwilioUtil {
 
     static String accountSid = "AC1843d7a1a782d4e7f1b78962c8d51eab";
-    static String authToken = "1a827f4fd7fb06aa4198efd163739122";
+    static String authToken = "";
 
     public static String getOTP(){
         try {
@@ -28,7 +28,7 @@ public class TwilioUtil {
 
     public static String getMessage() {
         return getMessages().filter(m -> m.getDirection().compareTo(Message.Direction.INBOUND) == 0)
-                .filter(m -> m.getTo().equals("+13343734019")).map(Message::getBody).findFirst()
+                .filter(m -> m.getTo().equals("+18457044081")).map(Message::getBody).findFirst()
                 .orElseThrow(IllegalStateException::new);
     }
 

@@ -68,7 +68,9 @@ public class TestBase {
 	}
 	
 	
-	
+	public static String getAuthToken() {
+		return "ya29.a0ARrdaM-4pM_JjO_Tv32IfFfItGnlkCV1HCSt7fG5la3jPz2D7eGCRgug7m8wHJ_bmwel6zSq4cWgKZfiXCVXjRKnFDySiHxxHhFXuRwvYPyOaJBZCe68m7Dml7zvLxWJwUKRUTff03v6fsWR-iaEta0cFI4i";
+	}
 	
 	
 	
